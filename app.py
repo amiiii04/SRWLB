@@ -12,7 +12,7 @@ indices = joblib.load("indices.pkl")
 # ==========================================
 # Fungsi Rekomendasi
 # ==========================================
-def rekomendasi_tempat(nama, top_n=5):
+def rekomendasi_tempat(nama, top_n=3):
     if nama not in indices:
         return f"Tempat '{nama}' tidak ditemukan dalam data."
     
